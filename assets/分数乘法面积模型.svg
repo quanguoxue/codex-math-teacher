@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+    </style>
+    <pattern id="grid1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#cce5ff" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="hatch1" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#ff6b6b" stroke-width="3"/>
+    </pattern>
+    <pattern id="hatch2" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#4ecdc4" stroke-width="3"/>
+    </pattern>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">
+    分数乘法面积模型：1/3 × 1/4 = 1/12
+  </text>
+
+  <!-- 外框 -->
+  <rect x="100" y="70" width="360" height="360" fill="url(#grid1)" stroke="#333" stroke-width="2"/>
+
+  <!-- 水平分割线（3等分） -->
+  <line x1="100" y1="190" x2="460" y2="190" stroke="#333" stroke-width="1.5"/>
+  <line x1="100" y1="310" x2="460" y2="310" stroke="#333" stroke-width="1.5"/>
+
+  <!-- 垂直分割线（4等分） -->
+  <line x1="190" y1="70" x2="190" y2="430" stroke="#333" stroke-width="1.5"/>
+  <line x1="280" y1="70" x2="280" y2="430" stroke="#333" stroke-width="1.5"/>
+  <line x1="370" y1="70" x2="370" y2="430" stroke="#333" stroke-width="1.5"/>
+
+  <!-- 1/3 区域（红色斜线，横向前1行） -->
+  <rect x="100" y="70" width="360" height="120" fill="url(#hatch1)" opacity="0.4"/>
+
+  <!-- 1/4 区域（绿色斜线，竖向前1列） -->
+  <rect x="100" y="70" width="90" height="360" fill="url(#hatch2)" opacity="0.4"/>
+
+  <!-- 1/12 区域（交叉区域：第1行第1列） -->
+  <rect x="100" y="70" width="90" height="120" fill="#ffd93d" opacity="0.6" stroke="#e74c3c" stroke-width="3"/>
+
+  <!-- 标注 -->
+  <text x="55" y="135" text-anchor="end" font-size="16" font-weight="bold" fill="#e74c3c">1</text>
+  <text x="55" y="260" text-anchor="end" font-size="16" fill="#e74c3c">2</text>
+  <text x="55" y="380" text-anchor="end" font-size="16" fill="#e74c3c">3</text>
+
+  <text x="145" y="455" text-anchor="middle" font-size="16" fill="#4ecdc4">1</text>
+  <text x="235" y="455" text-anchor="middle" font-size="16" fill="#4ecdc4">2</text>
+  <text x="325" y="455" text-anchor="middle" font-size="16" fill="#4ecdc4">3</text>
+  <text x="415" y="455" text-anchor="middle" font-size="16" fill="#4ecdc4">4</text>
+
+  <!-- 左侧 "1/3" 标注 -->
+  <text x="55" y="130" text-anchor="end" font-size="16" fill="#e74c3c">1/3</text>
+
+  <!-- 下方 "1/4" 标注 -->
+  <text x="145" y="480" text-anchor="middle" font-size="16" fill="#4ecdc4">1/4</text>
+
+  <!-- 黄色交叉区域说明 -->
+  <line x1="190" y1="190" x2="520" y2="150" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="500" y="120" width="220" height="40" rx="8" fill="#ffd93d" opacity="0.8"/>
+  <text x="610" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">
+    1/3 × 1/4 = 1/12
+  </text>
+
+  <!-- 图例 -->
+  <rect x="100" y="510" width="20" height="20" fill="url(#hatch1)" opacity="0.5" stroke="#999" stroke-width="0.5"/>
+  <text x="130" y="525" font-size="14" fill="#333">横方向 1/3</text>
+
+  <rect x="300" y="510" width="20" height="20" fill="url(#hatch2)" opacity="0.5" stroke="#999" stroke-width="0.5"/>
+  <text x="330" y="525" font-size="14" fill="#333">竖方向 1/4</text>
+
+  <rect x="530" y="510" width="20" height="20" fill="#ffd93d" opacity="0.7" stroke="#999" stroke-width="0.5"/>
+  <text x="560" y="525" font-size="14" fill="#333">交叉 = 1/12</text>
+
+  <!-- 说明文字 -->
+  <text x="400" y="565" text-anchor="middle" font-size="13" fill="#666">
+    用面积模型理解：1/3 × 1/4 = 交叉部分占总面积的几分之几？
+  </text>
+
+  <!-- 角标 -->
+  <text x="780" y="590" text-anchor="end" font-size="11" fill="#999">
+    ✨ Codex + DeepSeek 生成 | 薛国权·运城市人民路学校
+  </text>
+</svg>

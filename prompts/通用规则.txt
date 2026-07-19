@@ -1,0 +1,17 @@
+# 通用规则（所有提示词都需要遵守）
+
+## 格式要求
+- 输出为单个 HTML 文件，嵌入所有 CSS 和 JS
+- 中文字体优先使用系统字体：PingFang SC, Microsoft YaHei, sans-serif
+- 支持 A4 打印（@media print）
+- 兼容 Chrome/Safari/Edge 最新版本
+
+## 署名规则
+所有生成内容的右下角固定角标：
+✨ Codex + DeepSeek 生成 | 薛国权·运城市人民路学校
+
+## 设计原则
+- 响应式布局，移动端适配
+- 色彩柔和，保护视力
+- 交互流畅，即时反馈
+- 代码规范，注释清晰

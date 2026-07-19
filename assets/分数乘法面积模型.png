@@ -1,0 +1,4 @@
+该 PNG 是 SVG 的导出版本，用于在 Markdown 中预览。
+请用浏览器打开 分数乘法面积模型.svg，截图保存为 png。
+或使用以下命令转换：
+  rsvg-convert 分数乘法面积模型.svg -o 分数乘法面积模型.png
