@@ -1,0 +1,72 @@
+你的任务：搜索 GitHub，找到对数学教师最有用的 Codex Skill，下载安装，让我的 Codex 能力翻倍。
+
+## 搜索策略（按优先级）
+
+### 第1轮：图像/图表生成（最重要，DeepSeek缺这个）
+在 GitHub 搜索以下关键词，找 public repo：
+- "codex skill svg generator"
+- "codex skill chart matplotlib"
+- "codex skill image pillow"
+- "codex skill diagram"
+- "codex skill math visualization"
+
+### 第2轮：文档/课件生成
+- "codex skill ppt generator"
+- "codex skill pdf maker"
+- "codex skill worksheet"（练习册）
+- "codex skill flashcard"（闪卡）
+
+### 第3轮：数据分析/批处理
+- "codex skill excel csv"
+- "codex skill batch process"
+- "codex skill qrcode barcode"
+
+## 筛选标准
+
+好的 Skill 必须满足至少3条：
+✅ SKILL.md 文件存在且格式正确
+✅ 不需要外部 API Key（纯本地运行）
+✅ 不需要额外安装软件（只用 Python 标准库或 Pillow）
+✅ 有清晰的 README 和使用示例
+✅ 和数学教学相关或通用工具
+❌ 跳过：需要付费API的、纯聊天的、与教学无关的
+
+## 执行步骤
+
+1. 对每一轮关键词，用 GitHub API 搜索：
+   ```
+   curl -s "https://api.github.com/search/repositories?q=[关键词]&sort=stars&order=desc&per_page=5"
+   ```
+
+2. 对找到的每个候选仓库，读取其 SKILL.md：
+   - 如果仓库根目录有 SKILL.md → 直接读
+   - 如果仓库里有多个 skill 子目录 → 列出所有，逐个评估
+
+3. 安装通过筛选的 Skill：
+   ```
+   mkdir -p ~/.codex/skills/[skill名]/
+   curl -o ~/.codex/skills/[skill名]/SKILL.md [SKILL.md的raw链接]
+   ```
+
+4. 每安装完一个，汇报：
+   - Skill 名称
+   - 功能（一句话）
+   - 触发词
+   - 是否需要额外配置
+
+## 输出格式
+
+最后给我一个汇总表：
+
+| Skill | 功能 | 触发词 | 状态 |
+|---|---|---|---|
+| xxx | xxx | "xxx" | ✅ 已安装 |
+| xxx | xxx | "xxx" | ⚠️ 需手动装Pillow |
+
+---
+
+⚠️ 注意：
+- 只用 GitHub 公开 API，不需要 Token
+- 如果某个仓库的 SKILL.md 依赖 OpenAI API，跳过（我用 DeepSeek）
+- 优先找纯 Python + 本地执行的 Skill
+- 别一次装太多，先装 5-8 个最有用的

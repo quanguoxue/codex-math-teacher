@@ -1,0 +1,10 @@
+请检测你当前使用的是哪个模型，是否为最新版本。
+
+步骤：
+1. 读取你的配置文件 `~/.codex/config.toml`，告诉我里面 `model_provider` 和 `[model_providers.CodexPlusPlus]` 段的完整内容
+2. 同时读取 `~/.codex/auth.json`（如果有），告诉我你的登录状态
+3. 告诉我 Codex 界面顶部的模型选择器当前显示的模型名
+4. 基于这些信息，告诉我你当前使用的是什么模型（推测是 deepseek-v4-flash 或 deepseek-v4-pro）
+5. 说明：因为 Codex 在沙箱里不能直接访问 127.0.0.1:57321 端口，所以无法通过 curl /v1/models 实测。你只需要看配置推断。
+
+现在开始：
