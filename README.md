@@ -8,7 +8,7 @@
 
 ## 目录
 
-- **skills/** — 6个 Codex Skill，安装即用
+- **skills/** — 7个 Codex Skill，安装即用
 - **prompts/** — 14个提示词模板，复制即用
 - **assets/** — SVG/PNG 教学图，免费可商用
 - **setup/** — 安装说明
@@ -23,7 +23,7 @@
 ### 使用提示词
 直接复制 `prompts/` 下的 .txt 文件内容，粘贴到 Codex 对话框即可。
 
-## 六个 Skill 一览
+## 七个 Skill 一览
 
 | Skill | 功能 | 触发词 |
 |---|---|---|
@@ -33,6 +33,7 @@
 | oral-arithmetic | 口算出题器（交互HTML） | "口算出题""计算练习" |
 | smart-error-book | 智能错题本 | "错题本""整理错题" |
 | fraction-game | 数学闯关游戏 | "分数游戏""数学闯关" |
+| polya-how-to-solve-it | 波利亚《怎样解题》解题思维框架 | "解题思路""怎么解""思考方法" |
 
 ## 联系我
 - 微信公众号：全国学数
