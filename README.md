@@ -8,8 +8,8 @@
 
 ## 目录
 
-- **一案三单/** — 一案三单资源包 v1.0.0（八段式教学设计模板 + 三单模板合集 + 资源清单）
-- **skills/** — 7个 Codex Skill，安装即用
+- **一案三单/** — 一案三单资源包 v1.0.1（八段式教学设计模板 + 三单模板合集 + 示例课例 + 资源清单）
+- **skills/** — 9个 Codex Skill，安装即用
 - **prompts/** — 27个提示词模板，复制即用
 - **assets/** — SVG/PNG 教学图，免费可商用
 - **setup/** — 安装说明
@@ -19,12 +19,12 @@
 ### 安装 Skill（在 Codex 中）
 1. 打开 Codex（ChatGPT.app）
 2. 输入：`/skill install https://github.com/quanguoxue/codex-math-teacher/blob/main/skills/one-case-three-sheets/SKILL.md`
-3. 同样的方式安装其他 5 个
+3. 同样的方式安装其他 8 个
 
 ### 使用提示词
 直接复制 `prompts/` 下的 .txt 文件内容，粘贴到 Codex 对话框即可。
 
-## 七个 Skill 一览
+## 九个 Skill 一览
 
 | Skill | 功能 | 触发词 |
 |---|---|---|
@@ -35,6 +35,8 @@
 | smart-error-book | 智能错题本 | "错题本""整理错题" |
 | fraction-game | 数学闯关游戏 | "分数游戏""数学闯关" |
 | polya-how-to-solve-it | 波利亚《怎样解题》解题思维框架 | "解题思路""怎么解""思考方法" |
+| codex-ppt | 图片型PPT/PPTX一键生成 | "PPT""课件" |
+| image-to-editable-ppt | 图片/PDF课件还原为可编辑PPT | "PPT转可编辑""还原课件" |
 
 ## 联系我
 - 微信公众号：全国学数
